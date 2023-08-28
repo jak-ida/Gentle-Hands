@@ -1583,9 +1583,10 @@
   }
 
   .home-partners {
-      background-color: var(--primary-clr-2);
-      color: var(--secondary-clr-1);
+      background-color: var(--secondary-clr);
+      color: var(--primary-clr);
       padding: 6rem;
+      
   }
 
   .home-partners-1 {
@@ -1593,6 +1594,7 @@
       flex-direction: row;
       gap: 2rem;
       justify-content: center;
+      align-items: center;
   }
   .home-partners .col-4{
     text-align: center;
@@ -1607,7 +1609,7 @@
       font-style: normal;
   }
   .partner-logo{
-    height:12rem;
+    height:auto;
     width:12rem;
   }
 
