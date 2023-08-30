@@ -86,6 +86,11 @@
       overflow-wrap: break-word;
       font-family: var(--font-2);
   }
+  h5{
+    font-size: 1rem;
+
+  }
+
 
   /*
   9. Create a root stacking context
@@ -317,7 +322,7 @@
 
   /*Constants*/
   p{
-    font-size: 0.85rem;
+    font-size: 0.85rem !important;
   }
   .grid {
       display: grid;
@@ -1019,58 +1024,60 @@
 }
 .box{
     background-color: var(--secondary-clr-1);
-    border-radius: 2rem 0rem 2rem 0rem;
+    border-radius: 3rem 0rem 3rem 0rem;
     color:var(--secondary-clr-2);
-    padding:2rem 2.5rem;
+    padding:3rem 3.5rem;
 }
+.box-1{
+    background-color: var(--primary-clr);
+    border-radius: 3rem 0rem 3rem 0rem;
+    color:var(--secondary-clr);
+    /* border:1.8px solid var(--primary-clr) */
+    box-shadow: 2px 2px 5px var(--primary-clr-2);
+}
+
 .white-1 h2 em {
     font-style: normal;
     font-size: 2.5rem;
 }
   .white1 img,.white img, .blue img, .red img{
-    border-radius: 2rem 0rem 2rem 0rem;
+    border-radius: 2.5rem 0rem 2.5rem 0rem;
   }
 
   .red {
       background-color: var(--tertiary-clr-2);
       color: var(--secondary-clr-1);
-      padding: 4rem 12rem;
+      padding: 4rem 10rem;
   }
+  
 
   .red h3 {
       color: var(--secondary-clr-2);
       font-size: 2rem;
-      ;
       padding-bottom: 2rem;
-      ;
   }
 
   .red h3 em {
       font-style: normal;
       font-size: 2.5rem;
-      ;
 
   }
   .red-2{
     background-image: linear-gradient( to right, var(--tertiary-clr-1), var(--tertiary-clr-2));
     color: var(--secondary-clr-1);
-      padding: 4rem 12rem 6rem;
+      padding: 4rem 10rem 6rem;
   }
   .red-2 h3 {
     color: var(--secondary-clr-1);
     font-size: 2rem;
-    ;
     padding-bottom: 2rem;
-    ;
 }
 
 .red-2 h3 em {
     font-style: normal;
     font-size: 2.5rem;
-    ;
-
-
 }
+
 .white-3{
     background-color: var(--secondary-clr-1);
 }
@@ -1078,42 +1085,37 @@
   .white {
       background-color: var(--secondary-clr);
       color: var(--secondary-clr-2);
-      padding: 4rem 12rem 6rem;
+      padding: 4rem 10rem 6rem;
   }
 
   .white h3 {
       color: var(--primary-clr-2);
-      font-size: 2rem;
-      ;
-      padding-bottom: 2rem;
-      ;
+      font-size: 2rem !important;
   }
 
   .white h3 em {
       font-style: normal;
-      font-size: 2.5rem;
-      ;
+      font-size: 2.5rem!important;
+      }
 
-
-  }
-  .white-1 {
+      .white-1 {
     background-color: var(--secondary-clr-1);
     color: var(--secondary-clr-2);
-    padding: 4rem 12rem 6rem;
+    padding: 4rem 10rem 6rem;
 }
 
 .white-1 h3 {
     color: var(--primary-clr-2);
     font-size: 2rem;
-    ;
+
     padding-bottom: 2rem;
-    ;
+
 }
 
 .white-1 h3 em {
     font-style: normal;
     font-size: 2.5rem;
-    ;
+
 
 
 }
@@ -1127,21 +1129,54 @@
 .white-11 h2 {
     color: var(--primary-clr-2);
     font-size: 2rem;
-    ;
     padding-bottom: 2rem;
-    ;
 }
 
 .white-11 h2 em {
     font-style: normal;
     font-size: 2.5rem;
-    ;
+
 
 
 }
+.white-4 {
+    color: var(--secondary-clr-2);
+    padding: 4rem 10rem 6rem;
+    z-index: 4;
+}
 
+.white-4 h3 {
+    color: var(--secondary-clr-1);
+    font-size: 2rem;
+}
 
+.white-4 h3 em {
+    font-style: normal;
+    font-size: 2.5rem;
+    }
 
+.toothbrushes{
+    background-image: url("Main\ Images/toothbrushes.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 0rem 0rem 3rem 0rem ;
+    
+}
+.constant {
+    color: var(--secondary-clr-2);
+    padding: 4rem 5rem;
+}
+.constant img{
+    box-shadow: 3px 0px 5px var(--tertiary-clr-2), 0px 3px 5px var(--tertiary-clr-1);
+}
+.constant h4{
+    color: var(--tertiary-clr-2);
+}
+.constant hr{
+    width:9.5%;
+    border:1.5px solid var(--tertiary-clr-1);
+    margin-left:11.8rem;
+}
 
 
 
@@ -1297,24 +1332,25 @@
     font-size: 2rem;
 }
 .block{
-    border:1.5px solid var(--secondary-clr-2);
+    border:1.8px solid var(--secondary-clr);
     padding:4rem;
-    border-radius: 1.5rem 0 1rem 0;
+    border-radius: 3rem 0 3rem 0;
     
 }
 .block-1{
-    border:1.5px solid var(--tertiary-clr-1);
+    border:1.8px solid var(--tertiary-clr-1);
     padding:4rem;
-    border-radius: 1.5rem 0 1rem 0;
+    border-radius:3rem 0 3rem 0;
     
 }
 .block h2{
     padding-bottom:2rem;
-    margin-left:0.4rem
+    margin-left:0.4rem;
+    font-size: 2rem;
 }
 .block h2 em{
     font-style:normal ;
-    font-size: 1.8rem;;
+    font-size: 2.5rem;;
 }
 
   .home-quotehr1 {
@@ -1339,7 +1375,6 @@
   }
 
   .home-about-content {
-     
       width: 90%;
   }
 
@@ -1518,7 +1553,7 @@
       text-align: justify;
       hyphens: auto;
       font-size: 0.85rem;
-      ;
+  
       padding: 0.5rem;
       display: grid;
       align-items: center;
@@ -1688,8 +1723,7 @@
   }
 
   .about-image {
-      max-height: 600px;
-      width: 90%;
+      height: 500px;
       margin: auto auto;
       border-radius: 2rem 0rem 2rem 0rem;
   }
@@ -1697,10 +1731,13 @@
   .about-content {
       margin: auto auto;
       width: 80%;
-      padding: 3rem 3rem 5rem;
+      padding: 3rem 3rem 0rem;
+      margin-bottom:2rem;
       align-items: center;
       text-align: justify;
+      background-color: var(--secondary-clr);
   }
+
 
   .about-content-2 {
       margin: auto;
@@ -1718,7 +1755,14 @@
   .about-mission {
       width: 85%;
       margin: auto;
-      padding-bottom: 2rem;
+      display: grid;
+      align-content: center;
+      padding:2rem 2.5rem
+  }
+  .center{
+    display: grid;
+    align-items: center;
+    justify-content: center;
   }
 
   .about-mission h4 {
@@ -1730,35 +1774,25 @@
       font-style: normal;
   }
 
-  .about-vision {
-      width: 85%;
-      margin: auto;
-  }
-
-  .about-vision h4 {
-      font-size: 1.5rem;
-  }
-
-  .about-vision h4 em {
-      font-size: 2rem;
-      font-style: normal;
-  }
-
   .about-values h5 {
-      color: var(--tertiary-clr-2)
+      color: var(--secondary-clr-1);
+      font-size: 1.5rem;
   }
 
   .about-values p {
       width: 85%;
       padding-bottom: 1rem;
-text-align: justify;
-hyphens: auto;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--secondary-clr);
 
   }
 
-  .about-team-dentist h4 {
+
+  .about-team h4 {
       text-align: center;
       padding: 0.5rem;
+      font-size: 1.8rem;;
   }
 
   .about-team p {
@@ -2150,7 +2184,7 @@ color: var(--secondary-clr-1);
 /*Whatsapp Button CSS*/
 body {
     font-family: "Lato", sans-serif;
-    background: #f1f1f1;
+
   }
   #send-it a:link, .blantershow-chat a:link, .close-chat a:link,
   #send-it a:visited, .blantershow-chat a:visited, .close-chat a:visited, .blantershow-chat a{
