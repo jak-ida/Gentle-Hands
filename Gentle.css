@@ -324,7 +324,7 @@
 
   /*Constants*/
   p {
-      font-size: 1rem !important;
+      font-size: 1.1rem !important;
   }
 
   .grid {
@@ -360,7 +360,7 @@
       padding: 5px;
       height: 60px;
       width: 100%;
-      background-color: var(--secondary-clr-2);
+      background-color: rgb(218, 218, 218);
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
@@ -2731,6 +2731,7 @@
 
       .main__intro_quote {
           font-size: 1.5rem !important;
+          line-height: 1rem;
 
       }
 
@@ -2885,8 +2886,9 @@
       .form {
           padding: 0rem 2rem 2rem;
       }
-      .form button{
-        width:auto;
+
+      .form button {
+          width: auto;
       }
 
 
