@@ -263,7 +263,8 @@
                 <br>
                 <p>At Gentle Hands Dental, you can
                     trust our expertise to provide you with exceptional care and support throughout your minor oral
-                    surgery journey from the moment you enter the door to your fully healed smile. Dental concerns will be a
+                    surgery journey from the moment you enter the door to your fully healed smile. Dental concerns will
+                    be a
                     thing of the past when you visit us at Gentle Hands Dental.</p>
             </div>
             <div class="col-md-6">
@@ -284,7 +285,8 @@
                 <br>
                 <p>At Gentle
                     Hands Dental, we're dedicated to providing you with a teeth whitening experience that leaves you
-                    with a natural whitened and brightened smile. Teeth stains and awkward smiles are no more. Schedule your bleaching treatment with us today for a luminous and vibrant smile. </p>
+                    with a natural whitened and brightened smile. Teeth stains and awkward smiles are no more. Schedule
+                    your bleaching treatment with us today for a luminous and vibrant smile. </p>
             </div>
         </div>
     </div>
@@ -384,7 +386,17 @@
     <script src="Bootstrap.min.js"></script>
     <script src="js/dropdown3.js"></script>
     <script>
-
+        // $(document).ready(function(){});
+        $(document).ready(function(){
+            // Check if the URL has a hash (e.g., #ABC or #DEF)
+        if (window.location.hash) {
+            // Extract the section ID from the hash
+            var sectionId = window.location.hash.substring(1); // Remove the '#' character
+            var offset = 175; // Adjust this value as needed
+            // Call the scrollToSection function with the extracted section ID
+            scrollToSection(sectionId, offset);
+        }
+        });
 
         // Show scroll-to-top button after scrolling halfway through the page
         window.onscroll = function () {
@@ -419,6 +431,23 @@
         function redirectToServices() {
             window.location.href = "services.html";
         }
+
+        // Function to scroll to the section with an offset
+
+        function scrollToSection(sectionId, offset) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop - offset,
+                    behavior: "smooth"
+                });
+            }
+            // window.location.href = "services.html#" + sectionId;
+        }
+
+        
+        
+
 
 
     </script>
