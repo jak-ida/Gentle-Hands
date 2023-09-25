@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
-    <!-- <link href="Renewal.css" rel="stylesheet" type="text/css" /> -->
     <link href="Gentle.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/dropdown3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -238,7 +237,7 @@
                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque reiciendis adipisci vel officia
                     eaque ea illum pariatur eum, minus suscipit numquam tempore perferendis ab nemo eius voluptate magni
                     veniam nam.</p>
-                <button type="button" class="home-about-button btn" onclick="redirectToBlog()"> READ MORE </button>
+                <button type="button" class="home-about-button btn" onclick="redirectToAbout()"> READ MORE </button>
             </div>
         </div>
     </div>
@@ -466,7 +465,7 @@
             window.location.href = "about.html";
         }
         function redirectToBlog() {
-            window.location.href = "home.html";
+            window.location.href = "";
         }
 
         function redirectToContact() {
@@ -555,6 +554,21 @@
 
 
     });
+
+    // Function to scroll to the section with an offset
+    function scrollToSection(sectionId) {
+        // var section = document.getElementById(sectionId);
+        // if (section) {
+        //     window.scrollTo({
+        //         top: section.offsetTop - offset,
+        //         behavior: "smooth"
+        //     });
+        // }
+
+        window.location.href = "services.html#" + sectionId ;
+    }
+
+    
     </script>
 </body>
 
