@@ -1,0 +1,201 @@
+:root {
+    --primary-clr: #039ac7;
+    --primary-clr-2: #50c6d7;
+    --secondary-clr: #f7f7f7;
+    --secondary-clr-1: white;
+    --secondary-clr-2: #8d8d8d;
+    --tertiary-clr-1: #e00225;
+    --tertiary-clr-2: #800020;
+    --navy: #1d2024;
+
+    --font-1: 'Poppins', sans-serif;
+    --font-2: 'PT Serif', serif;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    color: var(--black);
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+    align-items: center;
+    padding: 0;
+}
+
+.dropdown:hover .dropbtn {
+    color: var(--black);
+    text-decoration: none;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-clr-2);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: var(--secondary-clr);
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--primary-clr-2);
+    color: var(--secondary-clr)!important;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Drop Down Icon */
+
+/* 3dot drop down */
+
+.hamburger {
+    display: none;
+    visibility: hidden;
+}
+
+.dropdown-3 {
+    position: relative;
+    display: inline-block;
+    right: 1rem;
+}
+
+/* Style for the button */
+.dropdown-btn-2 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-btn-2 i {
+    font-size: 15px;
+    color: #000;
+}
+
+/* Style for the button */
+.dropdown-btn-2 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-btn-2 i {
+    font-size: 15px;
+    color: #000;
+}
+
+  /* button one */
+  header button {
+      background-color: inherit;
+      border: none;
+  }
+
+  .button-one {
+      --button-color: var(--tertiary-clr-1);
+  }
+
+  .button-one .line {
+      transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+      transform-origin: center;
+  }
+
+  .button-one[aria-expanded="true"] .line {
+      transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+  }
+
+  .button-one[aria-expanded="true"] :is(.top, .bottom) {
+      y: 45;
+  }
+
+  .button-one[aria-expanded="true"] .top {
+      rotate: 45deg;
+  }
+
+  .button-one[aria-expanded="true"] .middle {
+      opacity: 0;
+  }
+
+  .button-one[aria-expanded="true"] .bottom {
+      rotate: -45deg;
+  }
+
+
+
+  #HamburgerDrop button {
+    background-color: inherit;
+    border: none;
+}
+
+@media screen and (max-width:1000px) {
+
+    .dropdown-content {
+        right: 2.8rem;
+        top: 0.2rem;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-3 .dropdown-content {
+        display: none;
+    }
+
+    .dropdown .menu-items {
+        display: none;
+    }
+
+    .dropdown-content1 {
+        display: block;
+    }
+
+    /* Show the dropdown content and sub-dropdown content on click */
+    .dropdown-3.active .dropdown-content {
+        display: block;
+    }
+
+    .dropdown.active .menu-items {
+        display: block;
+    }
+
+    .navbar a {
+        /* padding-left: 0px; */
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: block;
+        visibility: visible;
+    }
+
+    .links-container {
+        display: none;
+        visibility: hidden;
+    }
+    
+}
