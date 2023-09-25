@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
 
     <link href="Gentle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/dropdown3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 
 <body>
@@ -25,31 +27,12 @@
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT US</a>
             <a class="no-a active-pg" href="services.html">SERVICES</a>
-            <a href="gallery.html">BLOG</a>
+            <a href="home.html">BLOG</a>
             <a href="contact.html">CONTACT US</a>
-            <div class="dropdown-3">
-                <!-- Button one -->
-                <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button"
-                    aria-controls="primary-navigation" aria-expanded="false"
-                    style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
-                    <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
-                        <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
-                        </rect>
-                        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
-                        </rect>
-                        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
-                        </rect>
-                    </svg>
-                </button>
-                <div class="dropdown-content">
-                    <a href="index.html" class="active-pg">HOME</a>
-                    <a href="aboutren.html">ABOUT US</a>
-                    <a class="no-a" href="services.html">SERVICES</a>
-                    <a href="gallery.html">BLOG</a>
-                    <a href="contact.html">CONTACT US</a>
-                </div>
-            </div>
+            
         </div>
+        <div id="HamburgerDrop" class="dropdown-3"></div>
+
 
     </header>
     <div class="header-title">
@@ -57,11 +40,11 @@
     </div>
     <div class="">
         <div class="row white-1 ">
-            <div class="col-12 row service">
-                <div class="col-6 service-image">
+            <div class="col-12 row service column-reverse-md">
+                <div class="col-md-6 service-image">
                     <img src="Main Images/two black women.jpg">
                 </div>
-                <div class="col-6 service-content">
+                <div class="col-md-6 service-content">
 
                     <h3></h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
@@ -77,24 +60,24 @@
         <hr class="home-quotehr2">
     </div>
     <div class="">
-        <div class="row service-1 white">
-            <div class="col-6" id="cleaning">
+        <div class="row service-1 white ">
+            <div class="col-md-6" id="cleaning">
                 <h3><em>C</em>leaning</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
                     repellendus accusantium omnis consequatur deserunt in totam reiciendis. In, dignissimos nemo ducimus
                     aspernatur ipsa reiciendis voluptas.</p>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <img src="Main Images/pexels-elizabeth-lizzie-11756810.jpg">
             </div>
 
         </div>
         
-        <div class="row service-1 red">
-            <div class="col-6">
+        <div class="row service-1 red column-reverse-md">
+            <div class="col-md-6">
                 <img src="Main Images/teeth-1.jpg">
             </div>
-            <div class="col-6" id="exam">
+            <div class="col-md-6" id="exam">
                 <h3><em>C</em>omprehensive <em>E</em>xam</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
                     repellendus accusantium omnis consequatur deserunt in totam reiciendis. In, dignissimos nemo ducimus
@@ -103,22 +86,22 @@
         </div>
 
         <div class="row service-1 white">
-            <div class="col-6" id="kids">
+            <div class="col-md-6" id="kids">
                 <h3> <em>K</em>id's <em>D</em>entistry</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
                     repellendus accusantium omnis consequatur deserunt in totam reiciendis. In, dignissimos nemo ducimus
                     aspernatur ipsa reiciendis voluptas.</p>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <img src="Main Images/child-1.jpg">
             </div>
 
         </div>
-        <div class="row service-1 blue">
-            <div class="col-6">
+        <div class="row service-1 blue column-reverse-md">
+            <div class="col-md-6">
                 <img src="Main Images/pexels-anna-shvets-3845855.jpg">
             </div>
-            <div class="col-6" id="disimpaction">
+            <div class="col-md-6" id="disimpaction">
                 <h3> <em>D</em>isimpaction</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
                     repellendus accusantium omnis consequatur deserunt in totam reiciendis. In, dignissimos nemo ducimus
@@ -126,22 +109,22 @@
             </div>
         </div>
         <div class="row service-1 white">
-            <div class="col-6" id="extraction">
+            <div class="col-md-6" id="extraction">
                 <h3><em>E</em>xtraction</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
                     repellendus accusantium omnis consequatur deserunt in totam reiciendis. In, dignissimos nemo ducimus
                     aspernatur ipsa reiciendis voluptas.</p>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <img src="Main Images/pexels-karolina-grabowska-6627567.jpg">
             </div>
 
         </div>
-        <div class="row service-1 red">
-            <div class="col-6">
+        <div class="row service-1 red column-reverse-md" >
+            <div class="col-md-6">
                 <img src="Main Images/surgery1.jpg">
             </div>
-            <div class="col-6" id="fillings">
+            <div class="col-md-6" id="fillings">
                 <h3><em>F</em>illings</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
                     repellendus accusantium omnis consequatur deserunt in totam reiciendis. In, dignissimos nemo ducimus
@@ -150,21 +133,21 @@
         </div>
         <div class="row service-1 white">
 
-            <div class="col-6" id="oralhealth">
+            <div class="col-md-6" id="oralhealth">
                 <h3><em>O</em>ral <em>H</em>ealth <em>E</em>ducation</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
                     repellendus accusantium omnis consequatur deserunt in totam reiciendis. In, dignissimos nemo ducimus
                     aspernatur ipsa reiciendis voluptas.</p>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <img src="Main Images/pexels-cottonbro-studio-6502306.jpg">
             </div>
         </div>
-        <div class="row service-1 blue">
-            <div class="col-6">
+        <div class="row service-1 blue column-reverse-md">
+            <div class="col-md-6">
                 <img src="Main Images/pexels-shedrack-salami-16903641.jpg">
             </div>
-            <div class="col-6" id="root">
+            <div class="col-md-6" id="root">
                 <h3><em>R</em>oot <em>C</em>anal <em>T</em>reatment</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolorum ab unde, id deleniti
                     repellendus accusantium omnis consequatur deserunt in totam reiciendis. In, dignissimos nemo ducimus
@@ -175,14 +158,14 @@
     <!-- Footer-->
     <footer>
         <div class="row end">
-            <div class="col-3">
+            <div class="col-3-6-12">
                 <h3> OUR LOCATION </h3>
                 <br>
                 <p> Plot 686 Main Mall,</p>
                 <p> Gaborone, Botswana</p>
                 <br>
             </div>
-            <div class=" col-3">
+            <div class=" col-3-6-12">
                 <h3> WORKING HOURS</h3>
                 <br>
                 <h4> Monday: 09:00 - 17:00</h4>
@@ -194,7 +177,7 @@
                 <h4> Closed on Sundays and Public Holidays</h4>
                 <br>
             </div>
-            <div class="col-3 quicklinks">
+            <div class="col-3-6-12 quicklinks">
                 <h3> QUICK LINKS</h3>
                 <br>
                 <p> <a onclick="redirectToHome()"> Home</a> </p>
@@ -203,7 +186,7 @@
                 <p> <a onclick="redirectToContact()"> Contact Us </a>
                     <br>
             </div>
-            <div class="col-3">
+            <div class="col-3-6-12">
                 <div class="">
                     <h3> CONTACT US </h3>
                     <br>
@@ -266,6 +249,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <script src="jquery-3.6.4.min.js"></script>
     <script src="Bootstrap.min.js"></script>
+    <script src="js/dropdown3.js"></script>
     <script>
 
 
@@ -293,7 +277,7 @@
             window.location.href = "about.html";
         }
         function redirectToBlog() {
-            window.location.href = "";
+            window.location.href = "blog.html";
         }
 
         function redirectToContact() {
@@ -303,42 +287,7 @@
             window.location.href = "services.html";
         }
 
-        //Navbar settings for mobile starts// 
-        // Get the dropdown and sub-dropdown buttons
-        const dropdownBtn = document.querySelector('.dropdown-3 .button-one');
-        const subDropdownBtns = document.querySelectorAll('.dropdown .dropbtn');
-
-        // Add click event listener to the dropdown button
-        dropdownBtn.addEventListener('click', () => {
-            // Toggle active class on the dropdown
-            dropdownBtn.parentNode.classList.toggle('active');
-        });
-
-        // Add click event listener to the sub-dropdown buttons
-        subDropdownBtns.forEach((btn) => {
-            btn.addEventListener('click', () => {
-                // Toggle active class on the sub-dropdown
-                btn.parentNode.classList.toggle('active');
-            });
-        });
-
-
-        const buttons = document.querySelectorAll("button");
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const currentState = button.getAttribute("data-state");
-
-                if (!currentState || currentState === "closed") {
-                    button.setAttribute("data-state", "opened");
-                    button.setAttribute("aria-expanded", "true");
-                } else {
-                    button.setAttribute("data-state", "closed");
-                    button.setAttribute("aria-expanded", "false");
-                }
-            });
-        });
-
-     //Navbar settings for mobile ends//    
+     
     </script>
 </body>
 
