@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0">
     <!-- <link href="Renewal.css" rel="stylesheet" type="text/css" /> -->
     <link href="Gentle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/dropdown3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,31 +32,11 @@
                 <a href="index.html" class="active-pg">HOME</a>
                 <a href="about.html">ABOUT US</a>
                 <a class="no-a" href="services.html">SERVICES</a>
-                <a href="gallery.html">BLOG</a>
+                <a href="home.html">BLOG</a>
                 <a href="contact.html">CONTACT US</a>
-                <div class="dropdown-3">
-                    <!-- Button one -->
-                    <button class="btn button-one dropdown" data-widget="pushmenu" href="#" role="button"
-                        aria-controls="primary-navigation" aria-expanded="false"
-                        style="width:35px; height:31px;border-radius:.2rem!important;padding:inherit!important;">
-                        <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="20">
-                            <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
-                            </rect>
-                            <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
-                            </rect>
-                            <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
-                            </rect>
-                        </svg>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="index.html" class="active-pg">HOME</a>
-                        <a href="aboutren.html">ABOUT US</a>
-                        <a class="no-a" href="services.html">SERVICES</a>
-                        <a href="gallery.html">BLOG</a>
-                        <a href="contact.html">CONTACT US</a>
-                    </div>
-                </div>
+                
             </div>
+            <div id="HamburgerDrop" class="dropdown-3"></div>
 
         </header>
         <div class="main__all">
@@ -78,8 +59,8 @@
         </div>
     </div>
     <div class="fourthpg ">
-        <div class="row flex home-about reveal-fade-up">
-            <div class="col-6 grid home-about-content">
+        <div class="row flex home-about reveal-fade-up column-reverse">
+            <div class="col-6 grid home-about-content auto-margin">
                 <h3 class="home-about-header"> <em>A</em>bout <em>U</em>s</h3>
                 <p class="home-about-p">Gentle Hands Dental is a company owned and led by two (2) young Batswana females
                     committed to continued
@@ -87,8 +68,8 @@
                     individual client. </p>
                 <button type="button" class="home-about-button btn" onclick="redirectToAbout()"> READ MORE </button>
             </div>
-            <div class="col-6 grid">
-                <img class="home-about-image reveal-fade-up-3" src="Main Images/woman with thumbs up.jpg">
+            <div class="col-6 grid ">
+                <img class="home-about-image reveal-fade-up-3 auto-margin" src="Main Images/woman with thumbs up.jpg">
             </div>
         </div>
     </div>
@@ -97,21 +78,21 @@
         <div class="block">
             <div class="reveal-fade-right row">
                 <h2 class="col-12"><em>H</em>ow <em>C</em>an <em>W</em>e <em>H</em>elp?</h2>
-                <div class="col-3 m-1 bg-offwhite">
+                <div class="col-3 slider m-1 bg-offwhite" style="display:block;">
                     <h4>Time for a Check Up?</h4>
                     <p>Maintain your radiant smile and overall well-being with a visit to Gentle Hands Dental. Our
                         expert
                         team offers comprehensive check-ups, gentle cleanings, and personalized care to people of all
                         ages. </p>
                 </div>
-                <div class="col-3 m-1 bg-white">
+                <div class="col-3 slider m-1 bg-white">
                     <h4> Fix Damaged Teeth</h4>
                     <p>If you're dealing with chipped, cracked, or discolored teeth, our skilled dentists are here
                         to
                         help. Using the latest techniques and technology, we provide treatments that
                         rejuvenate your teeth's natural beauty and functionality. </p>
                 </div>
-                <div class="col-3 m-1 bg-white">
+                <div class="col-3 slider m-1 bg-white">
                     <h4>Improve your smile</h4>
                     <p> From teeth whitening to cosmetic procedures, we offer personalized solutions for a brighter,
                         more
@@ -119,7 +100,7 @@
                         journey to
                         a more confident you. </p>
                 </div>
-                <div class="col-3 m-1 bg-white">
+                <div class="col-3 slider m-1 bg-white">
                     <h4>Provide Education</h4>
                     <p> Through informative resources, one-on-one discussions, and expert guidance, we ensure you have
                         the
@@ -134,7 +115,7 @@
     <div class="services-1 white-3">
         <h2 class="services-header"> <em>S</em>ervices</h2>
         <div class="row services">
-            <div class="col-4 services-info reveal-fade-up">
+            <div class="col-4 service-adjustment-l services-info reveal-fade-up">
                 <div class="col-12 row pb-2">
                     <div class="col-10 ta-r gap">
 
@@ -265,15 +246,15 @@
 
 
     <div class="location blue row">
-        <div class="col-6 row location-1">
-            <img class="col-6 img-2" src="Main Images/male-doctor.jpg">
-            <img class="col-6" src="Main Images/lady.jpg">
+        <div class="col-md-6 row location-1">
+            <img class="col-sm-6 img-2" src="Main Images/male-doctor.jpg">
+            <img class="col-sm-6" src="Main Images/lady.jpg">
 
             <img class="col-12 img-1"
                 src="Main Images/black-woman-with-short-haircut-studio-shoot-closeup-wearing-glasses-cobra.jpg">
 
         </div>
-        <div class="col-6 location-info">
+        <div class="col-md-6 location-info">
             <h2> <em>V</em>isit <em>U</em>s</h2>
             <p> We are conveniently situated in the Main Mall Area. Find us in the Kalafhi Medical Center Clinic.</p>
 
@@ -365,14 +346,14 @@
 
     <footer>
         <div class="row end">
-            <div class="col-3">
+            <div class="col-3-6-12">
                 <h3> OUR LOCATION </h3>
                 <br>
                 <p> Plot 686 Main Mall,</p>
                 <p> Gaborone, Botswana</p>
                 <br>
             </div>
-            <div class=" col-3">
+            <div class="col-3-6-12">
                 <h3> WORKING HOURS</h3>
                 <br>
                 <h4> Monday: 09:00 - 17:00</h4>
@@ -384,7 +365,7 @@
                 <h4> Closed on Sundays and Public Holidays</h4>
                 <br>
             </div>
-            <div class="col-3 quicklinks">
+            <div class="col-3-6-12 quicklinks">
                 <h3> QUICK LINKS</h3>
                 <br>
                 <p> <a onclick="redirectToHome()"> Home</a> </p>
@@ -393,7 +374,7 @@
                 <p> <a onclick="redirectToContact()"> Contact Us </a>
                     <br>
             </div>
-            <div class="col-3">
+            <div class="col-3-6-12">
                 <div class="">
                     <h3> CONTACT US </h3>
                     <br>
@@ -452,11 +433,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <script src="jquery-3.6.4.min.js"></script>
+    <script src="js/dropdown3.js"></script>
     <script src="Bootstrap.min.js"></script>
     <script src="Animations.js"></script>
     <script>
-
-
+       
         // Show scroll-to-top button after scrolling halfway through the page
         window.onscroll = function () {
             var btn = document.getElementById("scroll-to-top-btn");
@@ -496,42 +477,84 @@
         }
 
 
-        //Navbar settings for mobile starts// 
-        // Get the dropdown and sub-dropdown buttons
-        const dropdownBtn = document.querySelector('.dropdown-3 .button-one');
-        const subDropdownBtns = document.querySelectorAll('.dropdown .dropbtn');
-
-        // Add click event listener to the dropdown button
-        dropdownBtn.addEventListener('click', () => {
-            // Toggle active class on the dropdown
-            dropdownBtn.parentNode.classList.toggle('active');
-        });
-
-        // Add click event listener to the sub-dropdown buttons
-        subDropdownBtns.forEach((btn) => {
-            btn.addEventListener('click', () => {
-                // Toggle active class on the sub-dropdown
-                btn.parentNode.classList.toggle('active');
-            });
-        });
 
 
-        const buttons = document.querySelectorAll("button");
-        buttons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const currentState = button.getAttribute("data-state");
 
-                if (!currentState || currentState === "closed") {
-                    button.setAttribute("data-state", "opened");
-                    button.setAttribute("aria-expanded", "true");
-                } else {
-                    button.setAttribute("data-state", "closed");
-                    button.setAttribute("aria-expanded", "false");
-                }
-            });
-        });
 
-     //Navbar settings for mobile ends//    
+       // JavaScript to slide .slider divs like a catalog only for screen widths < 1000px
+    let currentIndex = 0;
+    const col3Divs = document.querySelectorAll('.slider');
+    const screenWidthThreshold = 1000;
+    
+    function showNextDiv() {
+        //currentIndex = (currentIndex + 1) % col3Divs.length; // Loop through divs
+
+
+        const prevIndex = currentIndex;
+
+        currentIndex = (currentIndex + 1) % col3Divs.length;
+
+
+        col3Divs[prevIndex].style.transform = 'translateX(-100%)';
+
+        setTimeout( () =>{
+            col3Divs[prevIndex].style.display = 'none'; // Hide the current div
+        },500)
+
+        setTimeout( () =>{
+         col3Divs[currentIndex].style.display = 'block'; // Display the next div
+        },500)
+        col3Divs[currentIndex].style.transform = 'translateX(0)';
+
+    }
+
+    function shouldRunAction() {
+        return window.innerWidth < screenWidthThreshold;
+    }
+
+    // Set an interval to auto-slide the divs for small screens
+    const slideInterval = 8000; // 8 seconds
+    let slideIntervalId;
+
+    function startSlideInterval() {
+        slideIntervalId = setInterval(() => {
+            if (shouldRunAction()) {
+                showNextDiv();
+            }
+        }, slideInterval);
+    }
+
+    function stopSlideInterval() {
+        clearInterval(slideIntervalId);
+    }
+
+    // Initial check and start/stop interval based on screen width
+    if (shouldRunAction()) {
+        startSlideInterval();
+    } else {
+        stopSlideInterval();
+    }
+
+    var Resized = 0;
+    // Listen for window resize events and start/stop interval accordingly
+    window.addEventListener('resize', () => {
+
+        
+        if (shouldRunAction()) {
+            if(Resized == 0){
+
+            }else{
+                startSlideInterval();
+                Resized = 1;
+            }
+            
+        } else {
+            stopSlideInterval();
+            Resized = 0;
+        }
+
+
+    });
     </script>
 </body>
 
