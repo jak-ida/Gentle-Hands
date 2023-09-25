@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/snackbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/dropdown3.css">
+
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <img onclick="redirectToHome()" class="logo" src="Main Images/Gentle Hands Dental Logo [Colour].png" />
+
+        <ul class="links-container">
+            <!-- <li class="link-item"><a href="home.html" class="link">home</a></li> -->
+            <!-- <li class="link-item"><a href="editor.html" class="link">editor</a></li> -->
+            <li class="link-item"><a href="index.html" class="link">HOME</a></li>
+            <li class="link-item"><a href="about.html" class="link">ABOUT US</a></li>
+            <li class="link-item"><a href="services.html" class="link">SERVICES</a></li>
+            <li class="link-item"><a href="home.html" class="link no-a active-pg">BLOG</a></li>
+            <li class="link-item"><a href="contact.html" class="link">CONTACT US</a></li>
+        </ul>
+        <div id="HamburgerDrop" class="dropdown-3"></div>
+    </nav>
+    
+    <div class="banner skeleton-large">
+
+    </div>
+
+    <div class="blog">
+        <p class="category"><span>Type </span></p>
+        <h1 class="title"></h1>
+        <div class="DandT-container">
+            <p class="published"><span>published at - </span></p>
+            <div class="blog-icon-container">       
+                <i class="fab fa-facebook icon-positioning"></i>
+                <i class="fab fa-instagram icon-positioning"></i>
+                <i class="fab fa-twitter icon-positioning"></i>
+                <i class="fas fa-link icon-positioning"></i>
+            </div>
+        </div>
+        <div class="article">
+            
+        </div>
+        <div class="likeblog">
+            <span>Liked this Post?</span>
+           <i id="LikeBTN" class="far fa-heart icon-positioning like-btn"></i>
+
+           <div id="RCContainer" class="RollCounterContainer">
+            <span id="LikeAmount" class="Likes-amount">0</div>
+           </div>
+
+        </div>
+    </div>
+    
+    <h1 class="sub-heading" id="comments">Comments</h1>
+
+    <section  class="comment-section">
+
+        <textarea class="comment-textarea" placeholder="Leave a comment and let your voice be heard...."> 
+            
+
+        </textarea>
+
+        <div class="comment-buttons">
+            <button class="btn red">Clear</button>
+            <button class="btn red">Submit</button>
+
+        </div>
+
+        <div class="container">
+            <img src="img/5. Gentle Hands Dental Logo [Light].png" alt="Avatar">
+            <p>Hello. How are you today?</p>
+            <span class="time-right">11:00</span>
+        </div>
+
+        <div class="sub-comments">
+            <div class="sub-container">
+                <img src="img/5. Gentle Hands Dental Logo [Light].png" alt="Avatar">
+                <p>Hello. How are you today?</p>
+                <span class="time-right">11:00</span>
+            </div>
+        
+            <div class="sub-container">
+                <img src="img/5. Gentle Hands Dental Logo [Light].png" alt="Avatar">
+                <p>Hello. How are you today?</p>
+                <span class="time-right">11:00</span>
+            </div>
+        </div>
+    </section>
+
+
+    <h1 class="sub-heading">Read more</h1>
+
+    <!-- blog section -->
+    <section class="blogs-section">
+       
+        <!-- <div class="blog-card">
+            <img src="img/img3.png" class="blog-image" alt="">
+            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a href="blog.html" class="btn dark">read</a>
+        </div>  -->
+
+    </section>
+
+   
+    <div class="Current-Blog"></div>
+
+</body>
+    <div id="toast"></div>
+
+</html>
+
+    <script src="js/Snackbar.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/dropdown3.js"></script>
+
+
