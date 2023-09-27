@@ -1298,6 +1298,13 @@
       padding: 4rem;
       border-radius: 3rem 0 3rem 0;
   }
+  .block-2 {
+    border: 1.8px solid var(--tertiary-clr-1);
+    background-color: var(--secondary-clr-1);
+    padding-top:2.5rem!important;
+    border-radius: 3rem 0 3rem 0;
+    box-shadow: 5px 5px 8px var(--tertiary-clr-2);
+}
 
   .block h2 {
       padding-bottom: 2rem;
@@ -1468,10 +1475,11 @@
       align-items: center;
   }
 
+
   .gap p {
       text-align: right;
   }
-
+ 
   .pb-2 {
       padding-bottom: 2rem;
   }
@@ -1815,7 +1823,7 @@
   }
 
   .contact-image {
-      background-image: url("Main Images/manlaughing.jpg");
+      background-image: url("../Main Images/manlaughing.jpg");
       background-position: center;
       background-size: cover;
   }
@@ -3337,3 +3345,70 @@
 
 
   }
+
+  /*Editor*/
+  .editor h2{
+    font-size: 2.5rem;
+    margin-left: 5%;
+  }
+  .editor .red-2{
+    padding:1.5rem 2rem
+  }
+  .editor .white{
+    padding: 2.5rem 10rem 2.8rem;
+  }
+  .pb-1 {
+    padding-bottom: 1rem;
+}  
+.gap-1 {
+    gap: 1rem;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+.wdt{
+    width: 20% !important;
+    float: right !important;
+}
+.wdt-1{
+    width: auto;
+    float: right !important;
+}
+.editor button {
+    display: block !important;
+    background-color: var(--tertiary-clr-2);
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: .75rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    float: right;
+    width: auto;
+    font-weight: bold;
+}
+
+.editor button:hover {
+    background-color: var(--tertiary-clr-1);
+    color: var(--secondary-clr-1);
+    border: 1px solid var(--tertiary-clr-1);
+    cursor: pointer;
+}
+.editor .head-1{
+    display:inline-flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.editor .Logo {
+    width: 5% !important;
+    height: 5% !important ;
+    width: auto !important;
+}
+
+.edtior .Logo:hover {
+    cursor: pointer !important;
+}
