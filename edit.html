@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Gentle.css">
+    <title> GHD Editor </title>
+    <link rel="icon" href="Main Images/Gentle Hands Dental Logo Icon [Colour].png" />
+</head>
+
+<body>
+    <div class="editor">
+        <div class="red-2 head-1">
+            <h2>Gentle Hands Editor</h2>
+            <div>
+                <button id="SubmitChanges" class="btn wdt-1" type="button" onclick="LogOut()">
+                    Sign Out
+                </button>
+            </div>
+        </div>
+        <div class="white">
+            <h3 class="pb-1"> Gentle Hands Details:</h3>
+            <form class="gap-1 form block-2">
+                <div>
+                    <label for="whatsappNumberChange">Whatsapp Number:</label>
+                    <input type="number" id="whatsappNumberChange" name="whatsappNumberChange"
+                        placeholder="e.g. (+267) 123456789">
+                </div>
+                <div>
+                    <label for="phone1Change">Phone Number (1):</label>
+                    <input type="number" id="phone1Change" name="phone1Change" placeholder="e.g. (+267) 123456789">
+                </div>
+                <div>
+                    <label for="phone2Change">Phone Number (2):</label>
+                    <input type="number" id="phone2Change" name="phone2Change" placeholder="e.g. (+267) 123456789">
+                </div>
+                <div>
+                    <label for="emailChange">Email:</label>
+                    <input type="text" id="emailChange" name="emailChange" placeholder="e.g. abcdefgh@gmail.com">
+                </div>
+                <div>
+                    <label for="locationChange">Location:</label>
+                    <input type="text" id="locationChange" name="locationChange"
+                        placeholder="e.g. Plot 123, Street Name, Gaborone, Botswana">
+                </div>
+                <div><button id="SubmitChanges" class="btn wdt" type="button" onclick="updateDetails()">
+                        UPDATE
+                    </button></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
