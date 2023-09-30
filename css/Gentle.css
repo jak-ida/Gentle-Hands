@@ -1022,7 +1022,11 @@
       font-size: 2.5rem;
 
   }
-
+  .red-21 {
+    background-image: linear-gradient(to right, var(--tertiary-clr-1), var(--tertiary-clr-2));
+    color: var(--secondary-clr-1);
+    padding: 2rem;
+}
   .red-2 {
       background-image: linear-gradient(to right, var(--tertiary-clr-1), var(--tertiary-clr-2));
       color: var(--secondary-clr-1);
@@ -1928,6 +1932,34 @@
       text-align: justify;
       hyphens: auto;
   }
+  .form-3 {
+    width: 100%;
+    color: var(--primary-clr);
+}
+.form-3 button {
+    display: block !important;
+    background-color: var(--tertiary-clr-2);
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    float: right;
+    width: auto;
+    font-weight: bold;
+}
+
+.form-3 button:hover {
+    background-color: var(--tertiary-clr-1);
+    color: var(--secondary-clr-1);
+    border: 1px solid var(--tertiary-clr-1);
+    cursor: pointer;
+}
+
 
   .form {
       padding: 2rem 7rem;
@@ -1945,7 +1977,7 @@
   input[type="text"],
   input[type="email"],
   input[type="number"],
-  textarea {
+  textarea, select {
       width: 100%;
       padding: 0.5rem;
       border: #ccc;
