@@ -272,8 +272,8 @@
     </footer>
     <!-- Scroll Up Button -->
     <button id="scroll-to-top-btn">
-        <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="../Main\ Images/up-long.svg" alt="Back to top"
-            src="../Main\ Images/up-long.svg">
+        <img width="20" height="20" class="lazyloading-hidden lazyloaded" data-src="Main\ Images/up-long.svg" alt="Back to top"
+            src="Main\ Images/up-long.svg">
     </button>
     <!-- Modal -->
     <div class="modal Modalfade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
@@ -302,7 +302,9 @@
     <script src="js/Bootstrap.min.js"></script>
     <script src="js/Animations.js"></script>
     <script>
-
+ $(document).ready(function () {
+            reveal();
+        });
 
         // Show scroll-to-top button after scrolling halfway through the page
         window.onscroll = function () {
