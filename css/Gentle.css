@@ -1160,8 +1160,7 @@
     background-color: var(--secondary-clr-2);
     border-radius: 3rem 0rem 3rem 0rem;
     color: var(--secondary-clr);
-    width:50%;
-    margin:0.5rem auto auto auto;
+    margin:0.5rem;
     box-shadow: 2px 2px 5px var(--secondary-clr-1);
     padding:2rem 2.5rem;
 }
@@ -1171,7 +1170,7 @@
     color: var(--secondary-clr);
     box-shadow: 2px 2px 5px var(--tertiary-clr-1);
     padding:2rem 2.5rem;
-    margin:0.5rem
+    margin:0.5rem;
 }
 .testimonials img{
     width:80%;
@@ -1180,6 +1179,18 @@
 .testimonials .img-2{
     width:20px;
     height:20px
+}
+#Testimonials{
+    height:max(500px,10rem);
+    overflow: scroll;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    animation: scroll 5s linear infinite; /* Adjust the speed as needed */  
+}
+#Testimonials::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
   .main__ {
       background-image: url("../Main\ Images/MainBackground1.jpg");
@@ -1210,7 +1221,7 @@
       font-size: 4.5rem;
       color: var(--secondary-clr-2);
       font-weight: bolder;
-      line-height: 2.5rem;
+      line-height: 3.5rem;
       font-weight: lighter;
       font-family: 'Times New Roman', serif;
   }
@@ -1471,14 +1482,7 @@
   }
 
   .services {
-      padding: 2rem 3rem 0rem;
-  }
-
-  .services-info {
-      color: var(--bs-dark);
-      padding: 3rem 0rem;
-      align-content: center;
-      align-items: center;
+      padding: 4rem 0rem 0rem;
   }
 
   .h3-1 {
@@ -1510,7 +1514,7 @@
   }
 
   .gap {
-      gap: 2rem;
+      gap: 1rem;
       display: grid;
       align-content: center;
       align-items: center;
@@ -1626,6 +1630,7 @@
       gap: 2rem;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
   }
 
   .home-partners .col-4 {
@@ -2202,6 +2207,9 @@
   }
 
   /*Services Page*/
+  .services-7{
+    display: none;
+  }
   .service {
       display: grid;
       align-items: center;
@@ -2680,6 +2688,11 @@
   @media (min-width:500px) and (max-width:1000px) {
 
       /*Home Page 1000px*/
+      .testimonials img{
+        width:60%;
+        height:auto;
+        margin: 1rem auto;
+    }
       .main__all {
           margin-left: 27rem;
       }
@@ -2820,6 +2833,22 @@
           margin: auto;
           text-align: justify;
       }
+      .services-6{
+        grid-column: auto/span 6 !important;
+      }
+      .services-7{
+        display: block;
+        grid-column: auto/span 6 !important;
+      }
+      .flex-3{
+        display: flex;
+        flex-wrap: wrap-reverse;
+      }
+
+
+
+
+
 
       /*Contact Page 1000px*/
       .contact-details {
@@ -3090,7 +3119,15 @@
           grid-column: auto/span 12;
       }
   }
+@media (max-width:800px){
+    .services-6 .services-image, .services-7 .services-image{
+        display: none;
+    }
 
+    .services-6, .services-7{
+        grid-column: auto/span 12!important;
+    }
+}
 
   @media (min-width:768px) and (max-width:1000px) {
 
@@ -3155,6 +3192,12 @@
 
 
   @media screen and (max-width:500px) {
+    .services-info{
+        
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
       .column-reverse-md {
           display: flex;
           flex-direction: column-reverse;
@@ -3419,10 +3462,16 @@
           }
       }
 
-
+      #Test-img{
+        display: none;
+    }
+    .testimonials{
+        width:auto;
+        padding:1rem;
+    }
   }
 
-  /*Editor*/
+  /*Editor Page*/
   .editor h2{
     font-size: 2.5rem;
     margin-left: 5%;
