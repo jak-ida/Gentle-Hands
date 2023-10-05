@@ -215,7 +215,7 @@ const scrollInterval = setInterval(scrollItems, 5000); // Adjust the interval as
       }
       var distance = partnerList.scrollWidth / partnerList.children.length;
       partnerList.scrollTop = distance * partnerScrollIndex;
-      partnerScrollIndex++;
+      // partnerScrollIndex++;
 
     }
 
