@@ -195,33 +195,62 @@ const scrollInterval = setInterval(scrollItems, 5000); // Adjust the interval as
 // }, true);
 
 
- // JavaScript to control slow smooth scrolling
-    const partnerList = document.getElementById("Partners");
-    const partnersToScroll = 1;
-    const PartnerScrollDuration = 2000; // Adjust the duration in milliseconds (2000ms = 2 seconds)
-    let partnerScrollIndex = 1;
+//  // JavaScript to control slow smooth scrolling
+//     const partnerList = document.getElementById("Partners");
+//     const partnersToScroll = 1;
+//     const PartnerScrollDuration = 2000; // Adjust the duration in milliseconds (2000ms = 2 seconds)
+//     let partnerScrollIndex = 1;
 
-    function partnerScrollItems() {
-      if (partnerScrollIndex >= partnerList.children.length) {
+//     function partnerScrollItems() {
+//       if (partnerScrollIndex >= partnerList.children.length) {
 
-        // Reached the last item or went beyond it
-        // Remove the first item and append it to the bottom
-        const firstItem = partnerList.children[0];
-        partnerList.removeChild(firstItem);
-        partnerList.appendChild(firstItem);
+//         // Reached the last item or went beyond it
+//         // Remove the first item and append it to the bottom
+//         const firstItem = partnerList.children[0];
+//         partnerList.removeChild(firstItem);
+//         partnerList.appendChild(firstItem);
 
-        // // Reset partnerScrollIndex to 1 to start scrolling from the new first item
-        partnerScrollIndex = 1;
-      }
-      var distance = partnerList.scrollWidth / partnerList.children.length;
-      partnerList.scrollTop = distance * partnerScrollIndex;
-      // partnerScrollIndex++;
+//         // // Reset partnerScrollIndex to 1 to start scrolling from the new first item
+//         partnerScrollIndex = 1;
+//       }
+//       var distance = partnerList.scrollWidth / partnerList.children.length;
+//       partnerList.scrollTop = distance * partnerScrollIndex;
+//       // partnerScrollIndex++;
 
-    }
+//     }
+    
 
-    // Set an interval to scroll the items automatically
-    const partnerScrollInterval = setInterval(partnerScrollItems, 1500); // Adjust the interval as needed (3 seconds in this example)
+//     // Set an interval to scroll the items automatically
+//     const partnerScrollInterval = setInterval(partnerScrollItems, 1500); // Adjust the interval as needed (3 seconds in this example)
 
 
 
+// JavaScript to control slow smooth scrolling
+const partnerList = document.getElementById("Partners");
+const partnersToScroll = 1;
+const PartnerScrollDuration = 500; // Adjust the duration in milliseconds (2000ms = 2 seconds)
+let partnerScrollIndex = 1;
+
+function partnerScrollItems() {
+  if (partnerScrollIndex >= partnerList.children.length) {
+
+    // Reached the last item or went beyond it
+    // Remove the first item and append it to the bottom
+    const firstItem = partnerList.children[0];
+    partnerList.removeChild(firstItem);
+    partnerList.appendChild(firstItem);
+
+    // Reset partnerScrollIndex to 1 to start scrolling from the new first item
+    partnerScrollIndex = 1;
+  }
+  var distance = partnerList.scrollWidth / partnerList.children.length;
+  partnerList.scrollTop = distance * partnerScrollIndex;
+  partnerScrollIndex++;
+}
+
+// Apply smooth scrolling transition
+partnerList.style.transition = `scroll ${PartnerScrollDuration}ms ease-in-out`;
+
+// Set an interval to scroll the items automatically
+const partnerScrollInterval = setInterval(partnerScrollItems, 500); // Adjust the interval as needed (3 seconds in this example)
 
