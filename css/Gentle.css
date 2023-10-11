@@ -1138,6 +1138,8 @@
 
   .constant img {
       box-shadow: 3px 0px 5px var(--tertiary-clr-2), 0px 3px 5px var(--tertiary-clr-1);
+      width:80%;
+      margin: auto;
   }
 
   .constant h4 {
@@ -1145,7 +1147,7 @@
   }
 
   .constant hr {
-    width: 19.5%;
+    width: 12%;
       border: 1.5px solid var(--tertiary-clr-1);
       margin-left: 11.8rem;
   }
@@ -3438,7 +3440,13 @@
 
       .constant {
           padding: 4rem 0rem;
+          gap:1rem
       }
+
+      .constant img {
+        width:80%;
+        margin: auto;
+    }
 
       .about-content {
           margin: auto auto;
