@@ -1145,7 +1145,7 @@
   }
 
   .constant hr {
-      width: 9.5%;
+    width: 19.5%;
       border: 1.5px solid var(--tertiary-clr-1);
       margin-left: 11.8rem;
   }
@@ -2838,7 +2838,7 @@
       }
 
       .constant hr {
-          margin-left: 3.9rem;
+        margin-left: 4.4rem;
       }
 
       .about-team p {
