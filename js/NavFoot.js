@@ -1,11 +1,11 @@
-// var page = window.location.href.split("bw/");
-//         if (page.length > 1) {
-//             var location = page[1].split(".")[0];
-//             document.getElementById(location).classList.add("active-pg")
-//             document.getElementById(location).classList.add("no-a")
-//         }else{
+var page = window.location.href.split("bw/");
+        if (page.length > 1) {
+            var location = page[1].split(".")[0];
+            document.getElementById(location).classList.add("active-pg")
+            document.getElementById(location).classList.add("no-a")
+        }else{
 
-//         }
+        }
 
 document.getElementById('Header').innerHTML = `<img onclick="redirectToHome()" class="Logo" src="Main Images/Gentle Hands Dental Logo [Colour].png" />
 <div class="navbar">
