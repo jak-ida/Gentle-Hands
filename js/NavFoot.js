@@ -1,10 +1,19 @@
+// var page = window.location.href.split("bw/");
+//         if (page.length > 1) {
+//             var location = page[1].split(".")[0];
+//             document.getElementById(location).classList.add("active-pg")
+//             document.getElementById(location).classList.add("no-a")
+//         }else{
+
+//         }
+
 document.getElementById('Header').innerHTML = `<img onclick="redirectToHome()" class="Logo" src="Main Images/Gentle Hands Dental Logo [Colour].png" />
 <div class="navbar">
-    <a href="index.html" class="active-pg">HOME</a>
-    <a href="about.html">ABOUT US</a>
-    <a class="no-a" href="services.html">SERVICES</a>
-    <a href="home.html">BLOG</a>
-    <a href="contact.html">CONTACT US</a>
+    <a id="Index" href="index.html" >HOME</a>
+    <a id="About" href="about.html">ABOUT US</a>
+    <a id="Services" href="services.html">SERVICES</a>
+    <a id="Blog" href="home.html">BLOG</a>
+    <a id="Contact" href="contact.html">CONTACT US</a>
     
 </div>
 <div id="HamburgerDrop" class="dropdown-3"></div>
