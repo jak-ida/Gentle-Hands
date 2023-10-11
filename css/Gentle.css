@@ -3200,6 +3200,11 @@
           padding: 3.5rem 2rem;
       }
 
+      .constant img {
+        width:80%;
+        margin: auto;
+    }
+
   }
 
 
@@ -3239,6 +3244,10 @@
       .home-partners-1 {
           width: 152vw !important;
       }
+      .constant img {
+        width:80%;
+        margin: auto;
+    }
   }
 
   @media (min-width:500px) and (max-width:624px) {
@@ -3262,11 +3271,18 @@
       .box {
           padding: 1.5rem 1.5rem;
       }
+      .constant img {
+        width:80%;
+        margin: auto;
+    }
   }
 
 
   @media screen and (max-width:500px) {
 
+    .about-team p {
+        width: 85%;
+    }
       .services-header,
       .home-about-header,
       .block h2,
@@ -3466,6 +3482,10 @@
           height: auto;
           margin: auto auto;
           border-radius: 2rem 0rem 2rem 0rem;
+      }
+
+      .about-values h5{
+        padding-left: 1.25rem;
       }
 
       .service-1 h3 {
