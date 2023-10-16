@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div class="editor">
-        <div class="red-2 head-1">
+    <div class="editor edit">
+        <div class="red-3 head-1">
             <h2>Gentle Hands Editor</h2>
             <div>
                 <button id="SubmitChanges" class="btn wdt-1" type="button" onclick="LogOut()">
@@ -20,36 +20,96 @@
             </div>
         </div>
         <div class="white">
-            <h3 class="pb-1"> Gentle Hands Details:</h3>
-            <form class="gap-1 form block-2">
-                <div>
-                    <label for="whatsappNumberChange">Whatsapp Number:</label>
-                    <input type="number" id="whatsappNumberChange" name="whatsappNumberChange"
-                        placeholder="e.g. (+267) 123456789">
+            <div class="border">
+                <div class="flex-0 ">
+                    <h3 class="s"> Gentle Hands Details</h3>
+                    <button onclick="OpenDrop(1)" id="open-1"> Update Details</button>
                 </div>
-                <div>
-                    <label for="phone1Change">Phone Number (1):</label>
-                    <input type="number" id="phone1Change" name="phone1Change" placeholder="e.g. (+267) 123456789">
+                <form class="gap-1 form collapse" id="opt-1">
+                    <div>
+                        <label for="whatsappNumberChange">Whatsapp Number:</label>
+                        <input type="number" id="whatsappNumberChange" name="whatsappNumberChange"
+                            placeholder="e.g. (+267) 123456789">
+                    </div>
+                    <div>
+                        <label for="phone1Change">Phone Number (1):</label>
+                        <input type="number" id="phone1Change" name="phone1Change" placeholder="e.g. (+267) 123456789">
+                    </div>
+                    <div>
+                        <label for="phone2Change">Phone Number (2):</label>
+                        <input type="number" id="phone2Change" name="phone2Change" placeholder="e.g. (+267) 123456789">
+                    </div>
+                    <div>
+                        <label for="emailChange">Email:</label>
+                        <input type="text" id="emailChange" name="emailChange" placeholder="e.g. abcdefgh@gmail.com">
+                    </div>
+                    <div>
+                        <label for="locationChange">Location:</label>
+                        <input type="text" id="locationChange" name="locationChange"
+                            placeholder="e.g. Plot 123, Street Name, Gaborone, Botswana">
+                    </div>
+                    <div><button id="SubmitChanges" class="btn wdt" type="button" onclick="updateDetails()">
+                            UPDATE
+                        </button></div>
+                </form>
+            </div>
+
+        </div>
+        <div class="white">
+            <div class="flex-0 border">
+                <h3 class="s"> Blog Post Details</h3>
+                <button onclick="redirectToEdit()"> Create Blog Post</button>
+            </div>
+        </div>
+        <div class="white">
+            <div class="border">
+                <div class="flex-0 ">
+                    <h3 class="s"> Log In Details</h3>
+                    <button onclick="OpenDrop(3)" id="open-3"> Update Details</button>
                 </div>
-                <div>
-                    <label for="phone2Change">Phone Number (2):</label>
-                    <input type="number" id="phone2Change" name="phone2Change" placeholder="e.g. (+267) 123456789">
-                </div>
-                <div>
-                    <label for="emailChange">Email:</label>
-                    <input type="text" id="emailChange" name="emailChange" placeholder="e.g. abcdefgh@gmail.com">
-                </div>
-                <div>
-                    <label for="locationChange">Location:</label>
-                    <input type="text" id="locationChange" name="locationChange"
-                        placeholder="e.g. Plot 123, Street Name, Gaborone, Botswana">
-                </div>
-                <div><button id="SubmitChanges" class="btn wdt" type="button" onclick="updateDetails()">
-                        UPDATE
-                    </button></div>
-            </form>
+                <form class="gap-1 form collapse" id="opt-3">
+                    <div>
+                        <label for="userName">Username:</label>
+                        <input type="text" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password1">Password:</label>
+                        <input type="text" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password2"> Confirm Password:</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div><button id="SubmitChanges" class="btn wdt" type="button" onclick="updateDetails()">
+                            UPDATE
+                        </button></div>
+                </form>
+            </div>
+
         </div>
     </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+
+        function OpenDrop(a) {
+            var toggleButton = document.getElementById('open-' + a);
+            var demo = document.getElementById('opt-' + a);
+            if (demo.style.display === 'none' || demo.style.display === '') {
+                demo.style.display = 'block';
+                demo.classList.add('collapsing');
+            } else {
+                demo.style.display = 'none';
+                demo.classList.remove('collapsing');
+            }
+        };
+
+        function LogOut() {
+            window.location.href = 'blog-login.html';
+        }
+    </script>
 </body>
 
 </html>
